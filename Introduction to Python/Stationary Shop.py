@@ -14,3 +14,29 @@
 #     On entering the product price to be a negative number, 
 #     the program should display the message " Invalid input" and stop the program. 
 
+item1 = "A4sheet"
+item2 = "pen"
+item3 = "pencil"
+item4 = "eraser"
+
+price1 = float(input("Cost of {}: ".format(item1)))
+if price1 < 0:
+    print("Invalid input")
+else:
+    price2 = float(input("Cost of {}: ".format(item2)))
+    if price2 < 0:
+        print("Invalid input")
+    else:
+        price3 = float(input("Cost of {}: ".format(item3)))
+        if price3 < 0:
+            print("Invalid input")
+        else:
+            price4 = float(input("Cost of {}: ".format(item4)))
+            if price4 < 0:
+                print("Invalid input")
+            else:
+                print("\nItems Details\n")
+                print("{}: {:.2f}".format(item1, price1))
+                print("{}: {:.2f}".format(item2, price2))
+                print("{}: {:.2f}".format(item3, price3))
+                print("{}: {:.2f}".format(item4, price4))
