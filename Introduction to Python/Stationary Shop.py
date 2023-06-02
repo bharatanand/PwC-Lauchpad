@@ -13,7 +13,6 @@
 #     The amount must be displayed with 2 decimal places. 
 #     On entering the product price to be a negative number, 
 #     the program should display the message " Invalid input" and stop the program. 
-
 item1 = "A4sheet"
 item2 = "pen"
 item3 = "pencil"
