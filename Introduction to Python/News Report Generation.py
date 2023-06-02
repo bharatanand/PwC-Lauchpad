@@ -11,4 +11,4 @@
 # If the dead count or injured count or safe count entered by the user is a negative number, then display the message 
 # "Invalid input" and stop the program.
 # The statement for seeking help should be "Please help the people who are suffering!!!".  
-# Please refer the sample input and output for more clarifications.
+# Please refer the sample input and output for more clarifications
