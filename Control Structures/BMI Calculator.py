@@ -25,13 +25,13 @@ if weight > 0 and height > 0:
 
     # Check the BMI range and display the corresponding risk message
     if BMI >= 27.5:
-        print("Your BMI is " + str(BMI) + " (High Risk).")
+        print("Your BMI is", BMI, "(High Risk).")
     elif BMI >= 23 and BMI <= 27.4:
-        print("Your BMI is " + str(BMI) + " (Moderate Risk).")
+        print("Your BMI is", BMI, "(Moderate Risk).")
     elif BMI >= 18.5 and BMI <= 22.9:
-        print("Your BMI is " + str(BMI) + " (Low Risk).")
+        print("Your BMI is", BMI, "(Low Risk).")
     elif BMI < 18.5:
-        print("Your BMI is " + str(BMI) + " (Risk of nutritional deficiency diseases).")
+        print("Your BMI is", BMI, "(Risk of nutritional deficiency diseases).")
 else:
     # Display an error message for invalid input
     print("Provide a valid input.")
