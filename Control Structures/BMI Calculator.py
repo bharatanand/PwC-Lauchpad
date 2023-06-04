@@ -11,12 +11,11 @@
 #     When the height or weight is entered as a negative number or zero, then display the message
 #     "Provide a valid input" and stop the program.
 
-
 # Get the weight from the user and convert it to an integer
-weight = int(input("Enter the weight of the person(kg):"))
+weight = int(input("Enter the weight of the person(kg):").strip())
 
 # Get the height from the user and convert it to a float
-height = float(input("Enter the height of the person(m):"))
+height = float(input("Enter the height of the person(m):").strip())
 
 # Check if both height and weight are greater than 0
 if weight > 0 and height > 0:
@@ -26,13 +25,13 @@ if weight > 0 and height > 0:
 
     # Check the BMI range and display the corresponding risk message
     if BMI >= 27.5:
-        print("Your BMI is " + str(BMI) + " (High Risk)")
+        print("Your BMI is " + str(BMI) + " (High Risk).")
     elif BMI >= 23 and BMI <= 27.4:
-        print("Your BMI is " + str(BMI) + " (Moderate Risk)")
+        print("Your BMI is " + str(BMI) + " (Moderate Risk).")
     elif BMI >= 18.5 and BMI <= 22.9:
-        print("Your BMI is " + str(BMI) + " (Low Risk)")
+        print("Your BMI is " + str(BMI) + " (Low Risk).")
     elif BMI < 18.5:
-        print("Your BMI is " + str(BMI) + " (Risk of nutritional deficiency diseases)")
+        print("Your BMI is " + str(BMI) + " (Risk of nutritional deficiency diseases).")
 else:
     # Display an error message for invalid input
-    print("Provide a valid input")
+    print("Provide a valid input.")
