@@ -20,6 +20,31 @@
 #     If the income entered by the user is a negative number, then, display the message " Invalid Income " and stop the program.
 #     The tax amount should be displayed in 2 decimal places
 
+
+
+def main():
+    # Get user input for age
+    age = int(input("Enter the age: "))
+
+    # Check if age is invalid
+    if age < 18 or age > 100:
+        print("Invalid Age")
+        return
+
+    # Get user input for income
+    income = int(input("Enter the income: "))
+
+    # Check if income is invalid
+    if income < 0:
+        print("Invalid Income")
+        return
+
+    # Calculate tax amount
+    tax_amount = calculate_income_tax(age, income)
+
+    # Print the result
+    print(tax_amount)
+
 def calculate_income_tax(age, income):
     # Check if age is invalid
     if age < 18 or age > 100:
@@ -58,30 +83,6 @@ def calculate_income_tax(age, income):
 
     # Format tax amount to 2 decimal places and return the result
     return f"The Tax amount is: {tax_amount:.2f}"
-
-
-def main():
-    # Get user input for age
-    age = int(input("Enter the age: "))
-
-    # Check if age is invalid
-    if age < 18 or age > 100:
-        print("Invalid Age")
-        return
-
-    # Get user input for income
-    income = int(input("Enter the income: "))
-
-    # Check if income is invalid
-    if income < 0:
-        print("Invalid Income")
-        return
-
-    # Calculate tax amount
-    tax_amount = calculate_income_tax(age, income)
-
-    # Print the result
-    print(tax_amount)
 
 
 if __name__ == '__main__':
