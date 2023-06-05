@@ -60,9 +60,29 @@ def calculate_income_tax(age, income):
     return f"The Tax amount is: {tax_amount:.2f}"
 
 
-# Main program
-age = int(input("Enter the age: "))
-income = int(input("Enter the income: "))
+def main():
+    # Get user input for age
+    age = int(input("Enter the age: "))
 
-result = calculate_income_tax(age, income)
-print(result)
+    # Check if age is invalid
+    if age < 18 or age > 100:
+        print("Invalid Age")
+        return
+
+    # Get user input for income
+    income = int(input("Enter the income: "))
+
+    # Check if income is invalid
+    if income < 0:
+        print("Invalid Income")
+        return
+
+    # Calculate tax amount
+    tax_amount = calculate_income_tax(age, income)
+
+    # Print the result
+    print(tax_amount)
+
+
+if __name__ == '__main__':
+    main()
