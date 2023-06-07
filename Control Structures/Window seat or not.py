@@ -18,7 +18,7 @@
 
  
 # Prompt the user to enter the number of seats per row
-print("Enter the number of seats per row")
+print("Enter the number of seats per row: \n")
 seats_per_row = int(input())
 
 # Check if the number of seats per row is invalid (less than or equal to zero)
@@ -27,7 +27,7 @@ if seats_per_row <= 0:
     exit()
 
 # Prompt the user to enter the seat number
-print("Enter the seat number")
+print("Enter the seat number: \n")
 seat_number = int(input())
 
 # Check if the seat number is invalid (negative, zero, or greater than the total number of seats)
