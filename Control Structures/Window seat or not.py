@@ -36,7 +36,7 @@ if seat_number <= 0 or seat_number > 11 * seats_per_row:
     exit()
 
 # Check if the seat is a window seat based on the logic: seat_number % seats_per_row == 1
-if seat_number % seats_per_row == 1:
+if seat_number % seats_per_row == 0:
     print("Window Seat")
 else:
     print("Not a Window Seat")
